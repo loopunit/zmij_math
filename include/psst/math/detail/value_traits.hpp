@@ -74,15 +74,15 @@ constexpr T iota_v = iota<T>::value;
 
 template <>
 struct iota<float> {
-    static constexpr float value = 1e-7;
+    static constexpr float value = 1e-7f;
 };
 template <>
 struct iota<double> {
-    static constexpr float value = 1e-15;
+    static constexpr double value = 1e-15;
 };
 template <>
 struct iota<long double> {
-    static constexpr float value = 1e-30;
+    static constexpr long double value = 1e-30;
 };
 
 /**
